@@ -1,5 +1,3 @@
-"use strict";
-
 //Abstracts constructing a Blob object, so it also works in older
 //browsers that don't support the native Blob constructor. (i.e.
 //old QtWebKit versions, at least).
@@ -78,11 +76,11 @@ function readAsArrayBuffer(blob, callback) {
   reader.readAsArrayBuffer(blob);
 }
 
-module.exports = {
-  createBlob: createBlob,
-  readAsArrayBuffer: readAsArrayBuffer,
-  readAsBinaryString: readAsBinaryString,
-  binaryStringToArrayBuffer: binaryStringToArrayBuffer,
-  arrayBufferToBinaryString: arrayBufferToBinaryString
+export {
+  createBlob,
+  readAsArrayBuffer,
+  readAsBinaryString,
+  binaryStringToArrayBuffer,
+  arrayBufferToBinaryString,
 };
 

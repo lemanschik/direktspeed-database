@@ -1,0 +1,52 @@
+pouchdb/pouchdb                           :koala: - PouchDB is a pocket-sized database.                                                                         public            7h
+pouchdb/pouchdb-server                    CouchDB-compatible server built on PouchDB and Node                                                                   public            Dec  7, 2022
+pouchdb/pouchdb-express-router            An Express submodule with a CouchDB style REST interface to PouchDB.                                                  public            Jan  8, 2022
+pouchdb/pouchdb-fauxton-logic                                                                                                                                   public            Nov 10, 2021
+pouchdb/upsert                            PouchDB plugin for upsert() and putIfNotExists() functions                                                            public            Sep  8, 2021
+pouchdb/pouchdb-wrappers                  Makes wrapping PouchDB functions a lot easier.                                                                        public, archived  Jul  2, 2021
+pouchdb/pouchdb-bug-helper                Make awesome reproducable bug reports for PouchDB                                                                     public            Jun  4, 2021
+pouchdb/pouchdb-validation                A PouchDB plug-in that allows you to re-use your CouchDB validate_doc_update functions on the client side.            public            Nov  2, 2020
+pouchdb/geopouch                          Spatial plugin from PouchDB extracted and supporting N dimentional coordinates.                                       public            May 23, 2020
+pouchdb/pouchdb-getting-started-todo      The source repository for the getting started tutorial for PouchDB                                                    public, fork      May 12, 2020
+pouchdb/pouchdb-fauxton-chrome-extension  Unmaintained: see #17                                                                                                 public            May 11, 2020
+pouchdb/add-cors-to-couchdb               CLI to add a good default CORS configuration to CouchDB                                                               public            Mar 16, 2020
+pouchdb/pouchdb-vhost                     See pouchdb-server for the new home of pouchdb-vhost                                                                  public, archived  Aug 13, 2018
+pouchdb/plugin-seed                       Seed project for PouchDB plugins.                                                                                     public            Jul 21, 2017
+pouchdb/pouchdb-list                      A PouchDB plug-in that allows you to re-use your CouchDB list functions on the client side.                           public            Jul 17, 2017
+pouchdb/couchdb-objects                   Aids in the construction of JSON objects as used by CouchDB.                                                          public            Jun 28, 2017
+pouchdb/pouchdb-show                      A PouchDB plug-in that allows you to re-use your CouchDB show functions on the client side.                           public            Jun 27, 2017
+pouchdb/pouchdb-plugin-helper             A helper tool for PouchDB plugins to run tests and more                                                               public            Jun 27, 2017
+pouchdb/pouchdb-security                  This has moved to https://github.com/pouchdb/pouchdb-server                                                           public            Jun 27, 2017
+pouchdb/pouchdb-replicator                This has moved to https://github.com/pouchdb/pouchdb-server                                                           public            Jun 27, 2017
+pouchdb/http-pouchdb                      MOVED - SEE THE pouchdb-server REPO                                                                                   public            Jun 27, 2017
+pouchdb/pouchdb-auth                      A PouchDB plug-in that simulates CouchDB's authentication daemon. Includes a users db that functions like CouchDB's.  public            Jun 16, 2017
+pouchdb/pouchdb-req-http-query            Given a CouchDB request object, make a similar http request on a given PouchDB database.                              public            Jun 16, 2017
+pouchdb/pouchdb-update                    A PouchDB plug-in that allows you to re-use your CouchDB update functions on the client side.                         public            Mar  7, 2017
+pouchdb/pouchdb-system-db                 Protects PouchDB system databases by wrapping their methods.                                                          public            Mar  7, 2017
+pouchdb/pouchdb-size                      Adds disk_size to info()'s output for your leveldown backed PouchDB's.                                                public            Mar  7, 2017
+pouchdb/pouchdb-rewrite                   A PouchDB plug-in that allows you to re-use your CouchDB rewrites on the client side.                                 public            Mar  7, 2017
+pouchdb/pouchdb-route                     Given a CouchDB request object, return the response of PouchDB's equivalent function.                                 public            Mar  7, 2017
+pouchdb/pouchdb-plugin-error              A PouchDB-like error object, for use by plug-ins.                                                                     public            Mar  7, 2017
+pouchdb/pouchdb-changeslike-wrapper       Helper function that makes wrapping changes(), sync(), replicate() etc. using pouchdb-wrappers easier.                public            Mar  7, 2017
+pouchdb/pouchdb-bulkdocs-wrapper          Helper function that makes wrapping bulkDocs using pouchdb-wrappers easier.                                           public            Mar  7, 2017
+pouchdb/pouchbase                         Server that lets PouchDB applications sync with passwordless logins                                                   public            Mar  7, 2017
+pouchdb/couchdb-harness                   A generalized port of the CouchDB JavaScript test harness.                                                            public            Mar  7, 2017
+pouchdb/couchdb-resp-completer            Builds a complete CouchDB-like response object from a very marginal one. (Can be just a string at first.)             public            Mar  7, 2017
+pouchdb/couchdb-render                    Given the code of a CouchDB show/list function (and some other stuff), this module runs it and returns the result.    public            Mar  7, 2017
+pouchdb/couchdb-eval                      Compiles a piece of code to a function object, providing a CouchDB-like JavaScript context.                           public            Mar  7, 2017
+pouchdb/sublevel-pouchdb                  Fork of level-sublevel with ony the subset of the API that PouchDB uses.                                              public            Mar  7, 2017
+pouchdb/pouchdb-search                    Search plugin for PouchDB.                                                                                            public            Mar  7, 2017
+pouchdb/pouchdb-fauxton-firefox-addon                                                                                                                           public            Mar  7, 2017
+pouchdb/pouchdb-fauxton-base                                                                                                                                    public            Mar  7, 2017
+pouchdb/pouchdb-fauxton                   Fork of CouchDB Fauxton for PouchDB Server                                                                            public, fork      Mar  7, 2017
+pouchdb/pouchdb-extend                    Extends method taken from JQuery 1.9.0 for use in PouchDB (DEPRECATED)                                                public            Mar  7, 2017
+pouchdb/npm-browser                       npm in your browser. Because why not. (UNMAINTAINED)                                                                  public            Mar  7, 2017
+pouchdb/now                               Small `now` app to quickly set up an in-memory PouchDB Server                                                         public            Mar  7, 2017
+pouchdb/GQL                               Google Query Language (GQL) interface for PouchDB                                                                     public            Mar  7, 2017
+pouchdb/errors                            Utils for working with PouchDB-style error objects.                                                                   public            Mar  7, 2017
+pouchdb/collate                           Collation functions for PouchDB map/ reduce and search plugins. ( ⚠️ moved to pouchdb core repo ⚠️ )                  public            Mar  7, 2017
+pouchdb/binary-util                       Blob shim for PouchDB                                                                                                 public            Mar  7, 2017
+pouchdb/ajax                              Ajax module as used in PouchDB                                                                                        public            Mar  7, 2017
+pouchdb/mapreduce                         PouchDB map/reduce plugin ( ⚠️ UPDATE: moved back to PouchDB core ⚠️ )                                                public            Feb 21, 2017
+pouchdb/express-pouchdb                   ⚠️⚠️⚠️ THIS REPO HAS MOVED ⚠️⚠️⚠️                                                                                     public            Feb 19, 2017
+pouchdb/dashboard 
