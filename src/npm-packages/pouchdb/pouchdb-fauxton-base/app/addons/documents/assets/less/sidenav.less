@@ -1,0 +1,191 @@
+// Licensed under the Apache License, Version 2.0 (the "License"); you may not
+// use this file except in compliance with the License. You may obtain a copy of
+// the License at
+//
+//   http://www.apache.org/licenses/LICENSE-2.0
+//
+// Unless required by applicable law or agreed to in writing, software
+// distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+// WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+// License for the specific language governing permissions and limitations under
+// the License.
+
+#sidebar-content {
+  .loading-lines {
+    margin-top: 20px;
+  }  
+}
+
+.sidenav{
+  .sidebar-toggler {
+    top: 5px;
+    position: absolute;
+    right: 7px;
+    z-index: 100;
+    width: 60px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    text-decoration: none;
+    .icon {
+      padding-right: 3px;
+    }
+
+    &.sidebar-hidden {
+      &:hover {
+        background-color: rgba(153, 153, 153, 0.1);
+      }
+      width: 120px;
+      right: 210px;
+    }
+  }
+  .nav li + .nav-header {
+    margin-top: 0px;
+  }
+  .nav-list > .active > a{
+    text-shadow: none;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  .nav-list > .active > a:hover {
+    color: white;
+  }
+  .nav-list > li > a:hover + div.add-dropdown .dropdown-toggle{
+    color: white;
+  }
+  .dropdown-toggle:hover {
+    color: @linkColor;
+  }
+  li{
+    position: relative;
+    a{
+      text-shadow: none;
+    }
+  }
+  li.nav-header {
+    position: relative;
+    > .accordion-body{
+      &.in {
+        border-bottom: 1px solid #d3d7db;
+      }
+    }
+    .accordion-body{
+      color: #eee;
+      margin-left: 0;
+      li.active > a{
+        background-color: rgba(0, 0, 0, 0.055);
+      }
+      li a{
+        font-size: 14px;
+        background-color: rgba(0, 0, 0, 0.02);
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+          background-color: @darkRed;
+        }
+      }
+    }
+    .fonticon-play{
+        color: @subListGray;
+        position: absolute;
+        display: block;
+        vertical-align: bottom;
+      }
+    .accordion-header:hover .fonticon-play {
+            color: white;
+     }
+    .fonticon-play{
+      .transition(all 0.25s linear);
+    }
+    > .accordion-header{
+      position: relative;
+      display: block;
+      border-bottom: 1px solid #d3d7db;
+      .accordion-list-item:hover {
+        p, .fonticon-play{
+          color: white;
+        }
+        p{
+          background-color: @darkRed;
+        }
+      }
+      .accordion-list-item:hover + div.add-dropdown .dropdown-toggle{
+        color: white;
+      }
+      .accordion-list-item p{
+        .transition(all 0.25s linear);
+      }
+      .design-doc-name {
+        cursor: pointer;
+        margin: 0;
+        color: @linkColor;
+        span {
+          width: @sidebarWidth - 30px;
+          display: block;
+          padding: 10px 13px 10px 36px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+      .fonticon-play{
+        font-size: 12px;
+        top: 12px;
+        left: 12px;
+      }
+      &.down .fonticon-play {
+        .rotate(90deg);
+      }
+      .add-dropdown{
+        right: 15px;
+      }
+      .dropdown-toggle:hover{
+        color: @linkColor;
+      }
+    }
+    > ul.accordion-body{
+      > li {
+        cursor: pointer;
+        a{
+          border-top: none;
+          &.accordion-header{
+            padding: 8px 5px 8px 36px;
+          }
+        }
+        .toggle-view{
+          padding: 4px 5px 4px 36px;
+        }
+        .fonticon-play{
+          font-size: 8px;
+          top: 11px;
+          left: 15px;
+        }
+        .fonticon:before{
+          margin-right: 6px;
+          font-size: 20px;
+          top: 3px;
+          position: relative;
+        }
+      }
+
+      li {
+        > a.down .fonticon-play {
+          .rotate(90deg);
+        }
+      }
+
+      li {
+        > a.down .fonticon-play {
+          .rotate(90deg);
+        }
+
+        &:hover {
+          .fonticon-play {
+            color: white;
+
+          }
+        }
+
+      }
+
+    }
+  }
+}

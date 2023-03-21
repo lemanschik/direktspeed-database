@@ -1,0 +1,86 @@
+{
+  "deps": [
+  { "name": "fauxton" },
+  { "name": "components" },
+  { "name": "databases" },
+  { "name": "documents" },
+  { "name": "activetasks" },
+  { "name": "cluster" },
+  { "name": "config" },
+  { "name": "replication" },
+  { "name": "cors" },
+  { "name": "permissions" },
+  { "name": "compaction" },
+  { "name": "auth" },
+  { "name": "verifyinstall" }
+  ],
+    "template": {
+      "development": {
+        "src": "assets/index.underscore",
+        "dest": "dist/debug/index.html",
+        "variables": {
+          "requirejs": "/assets/js/libs/require.js",
+          "css": "./css/index.css",
+          "base": null
+        },
+        "app": {
+          "root": "/",
+          "host": "../..",
+          "version": "1.0.dev",
+          "zeroClipboardPath": "js/zeroclipboard/ZeroClipboard.swf"
+        }
+      },
+      "release": {
+        "src": "assets/index.underscore",
+        "dest": "dist/debug/index.html",
+        "variables": {
+          "requirejs": "./js/REQUIREJS_FILE",
+          "css": "./css/CSS_FILE",
+          "base": null
+        },
+        "app": {
+          "root": "/_utils/",
+          "host": "../..",
+          "version": "1.0",
+          "zeroClipboardPath": "js/zeroclipboard/ZeroClipboard.swf"
+        }
+      },
+      "couchapp": {
+        "src": "assets/index.underscore",
+        "dest": "dist/debug/index.html",
+        "variables": {
+          "requirejs": "./js/REQUIREJS_FILE",
+          "css": "./css/CSS_FILE",
+          "base": null
+        },
+        "app": {
+          "root": "/",
+          "host": "../../..",
+          "version": "1.0",
+          "zeroClipboardPath": "js/zeroclipboard/ZeroClipboard.swf"
+        }
+      }
+    },
+
+    "couch_config": {
+      "fauxton": {
+        "db": "http://localhost:5984/fauxton",
+        "app": "./couchapp.js",
+        "options": {
+          "okay_if_missing": true
+        }
+      }
+    },
+
+    "nightwatch": {
+      "fauxton_username": "tester",
+      "password": "testerpass",
+      "fauxton_host": "localhost",
+      "fauxton_port": "8000",
+      "db_host": "localhost",
+      "db_port": "5984",
+      "custom_commands_path": ["test/nightwatch_tests/custom-commands", "test/nightwatch_tests/custom-commands/auth"],
+      "globals_path": "test/nightwatch_tests/helpers/helpers.js",
+      "selenium_port": "4444"
+    }
+}
