@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/pouchdb/mapreduce
+	branch = master
+	commit = 4feb23fde7411d724f9bbb92061ec02e0d508b1f
+	parent = 0abf2bb504dcb1fb9f29c47dda5db7f501f7ef87
+	method = merge
+	cmdver = 0a31831
