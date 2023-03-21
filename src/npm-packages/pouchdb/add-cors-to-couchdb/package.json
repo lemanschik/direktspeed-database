@@ -1,8 +1,9 @@
 {
   "name": "add-cors-to-couchdb",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "add CORS to couchdb",
-  "main": "index.js",
+  "module": "index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git://github.com/pouchdb/add-cors-to-couchdb.git"
@@ -12,16 +13,15 @@
     "couchdb",
     "pouchdb"
   ],
-  "author": "Calvin W. Metcalf",
-  "license": "Apache-2.0",
+  "author": "Frank Lemanschik",
+  "license": "Unlicense",
   "bugs": {
     "url": "https://github.com/pouchdb/add-cors-to-couchdb/issues"
   },
   "homepage": "https://github.com/pouchdb/add-cors-to-couchdb",
   "dependencies": {
     "lie": "^3.0.2",
-    "node-fetch": "^1.4.0",
-    "yargs": "^7.0.1"
+    "yargs": "^17.7.1"
   },
   "bin": "./bin.js",
   "files": [
