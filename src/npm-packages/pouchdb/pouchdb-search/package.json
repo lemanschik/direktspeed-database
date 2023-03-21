@@ -1,0 +1,26 @@
+{
+  "name": "pouchdb-search",
+  "version": "1.0.1",
+  "description": "solr search for pouchdb",
+  "main": "pouchdb.search.js",
+  "scripts": {
+    "test": "./node_modules/istanbul/lib/cli.js test ./node_modules/mocha/bin/_mocha test/test.js"
+  },
+  "keywords": [
+    "pouchdb"
+  ],
+  "author": "Calvin W. Metcalf",
+  "license": "MIT",
+  "repository": "git://github.com/calvinmetcalf/pouchdb-search.git",
+  "dependencies": {
+    "lunr": "~0.4.2",
+    "lie": "~2.3.0",
+    "pouchdb-collate": "0.1.0"
+  },
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "mocha": "~1.14.0",
+    "istanbul": "~0.1.45",
+    "pouchdb": "^2.1.2"
+  }
+}
