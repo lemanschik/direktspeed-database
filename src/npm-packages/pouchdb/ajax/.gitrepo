@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/pouchdb/ajax
+	branch = master
+	commit = eb186047dedf94693f5e72908d50e7b2076305b0
+	parent = f6ce01e3ec09537a3dcf45e1eba17214236a08e7
+	method = merge
+	cmdver = 0a31831
