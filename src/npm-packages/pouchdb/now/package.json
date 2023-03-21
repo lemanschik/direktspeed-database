@@ -1,0 +1,10 @@
+{
+  "name": "now",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "npm install pouchdb-server --no-optional",
+    "start": "pouchdb-server --in-memory -n"
+  },
+  "author": "Nolan Lawson <nolan@nolanlawson.com>",
+  "license": "Apache-2.0"
+}
