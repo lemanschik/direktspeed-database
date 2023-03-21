@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/pouchdb/add-cors-to-couchdb
+	branch = master
+	commit = 1fd7a6292ca72d9a9a31ed683adb80c590f10f49
+	parent = eca8e147a39434c39e78da5cd2ba4d276e4e08e8
+	method = merge
+	cmdver = 0a31831
