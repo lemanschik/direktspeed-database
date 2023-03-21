@@ -1,0 +1,39 @@
+{
+  "scripts": {
+    "start": "npm run build && forever lib/server/server.js",
+    "dev": "nodemon lib/server/server.js",
+    "test": "rm -rf data && mocha --bail tests/*_test.js",
+    "build": "mkdir -p dist && browserify lib/client/browser.js -s PouchBase > dist/pouchbase.js"
+  },
+  "dependencies": {
+    "bcrypt": "^0.8.0",
+    "bluebird": "^2.3.6",
+    "body-parser": "^1.9.0",
+    "browser-request": "^0.3.2",
+    "browserify": "^6.3.2",
+    "cookie-session": "^1.1.0",
+    "debug": "^2.1.0",
+    "emailjs": "^0.3.12",
+    "express": "^4.10.0",
+    "express-handlebars": "^2.0.1",
+    "express-session": "^1.9.0",
+    "forever": "^0.11.1",
+    "lie": "^2.8.0",
+    "marked": "^0.3.2",
+    "mkdirp": "^0.5.0",
+    "node-uuid": "^1.4.1",
+    "pouchdb": "^4.0.3",
+    "pouchdb-express-router": "0.0.8",
+    "request": "^2.46.0",
+    "tough-cookie": "^0.12.1"
+  },
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^2.3.3",
+    "nodemon": "^1.2.1"
+  },
+  "browser": {
+    "request": "browser-request",
+    "bluebird": "lie"
+  }
+}
