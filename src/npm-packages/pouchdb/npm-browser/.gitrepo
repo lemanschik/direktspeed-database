@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/pouchdb/npm-browser
+	branch = master
+	commit = 41a57412d020a8a8acdf91d11deeb113ca39df0d
+	parent = 70d06acca824ff9e152948e80a9a5bf3843d2e41
+	method = merge
+	cmdver = 0a31831
