@@ -1,7 +1,4 @@
 'use strict';
-var fetch = require('node-fetch');
-var url = require('url');
-var Promise = require('lie');
 
 var requests = [
   {
@@ -27,13 +24,9 @@ var requests = [
 ];
 
 function formatUrl(baseUrl, auth, path) {
-  var urlObject = url.parse(baseUrl + path);
+  
 
-  if (auth) {
-    urlObject.auth = auth;
-  }
-
-  return url.format(urlObject);
+  return Object.assign(new URL(baseUrl + path), { auth });
 }
 
 function updateConfig(urlString, value) {
