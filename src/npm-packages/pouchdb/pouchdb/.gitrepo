@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/stealify/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/pouchdb/pouchdb
+	branch = master
+	commit = 30fd84f1ae88ca8687c2842bd131e67e7cf7c41c
+	parent = f42fb1e52146306bd8687bcadce965c1838e88a3
+	method = merge
+	cmdver = 0a31831
