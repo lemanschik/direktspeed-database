@@ -1,9 +1,4 @@
-;
-
-
-
-export const addCors = async (baseUrl, auth) => {
-    
+export const addCors = async (baseUrl, auth) =>
   fetch(Object.assign(new URL(`${baseUrl}/_membership`))).then(
     // see https://github.com/klaemo/docker-couchdb/issues/42#issuecomment-169610897
     async (membershipResp) => {
@@ -30,4 +25,3 @@ export const addCors = async (baseUrl, auth) => {
         }
       })
   })
-}
